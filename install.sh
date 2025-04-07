@@ -10,9 +10,9 @@ NC='\033[0m' # No Color
 # Header
 echo -e "${GREEN}"
 echo "┌────────────────────────────────────────────────────┐"
-echo "│      Termux Media Downloader Installation         │"
-echo "│               by Alienkrishn                     │"
-echo "│        GitHub: github.com/Anon4You               │"
+echo "│      Termux Media Downloader Installation          │"
+echo "│               by Alienkrishn                       │"
+echo "│        GitHub: github.com/Anon4You                 │"
 echo "└────────────────────────────────────────────────────┘"
 echo -e "${NC}"
 
@@ -39,6 +39,8 @@ if [ ! -d "$HOME/storage" ]; then
     yes | termux-setup-storage
     sleep 2  # Give it time to complete
     mkdir -p ~/storage/shared/Youtube_Downloads
+  else
+    mkdir -p ~/storage/shared/Youtube_Downloads
 fi
 
 # Install main script
@@ -54,14 +56,14 @@ mkdir -p $HOME/.config/tmd_config
 echo -e "${GREEN}"
 echo "┌────────────────────────────────────────────────────┐"
 echo "│          Installation Completed Successfully!      │"
-echo "│                                                   │"
-echo "│   To start using the media downloader, run:       │"
-echo -e "│         ${YELLOW}tmd${GREEN}                                  │"
-echo "│                                                   │"
-echo "│   This will create the configuration file and     │"
-echo "│   set your preferred download directory.          │"
-echo "│                                                   │"
-echo "│   Default download location:                      │"
-echo -e "│   ${YELLOW}/sdcard/Youtube_Downloads${GREEN}                   │"
+echo "│                                                    │"
+echo "│   To start using the media downloader, run:        │"
+echo -e "│         ${YELLOW}tmd${GREEN}                                        │"
+echo "│                                                    │"
+echo "│   This will create the configuration file and      │"
+echo "│   set your preferred download directory.           │"
+echo "│                                                    │"
+echo "│   Default download location:                       │"
+echo -e "│   ${YELLOW}/sdcard/Youtube_Downloads${GREEN}                        │"
 echo "└────────────────────────────────────────────────────┘"
 echo -e "${NC}"
